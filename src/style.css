@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family:'Noto Sans', Arial, serif;
+    display: flex;
+}
+.wrapper{
+    width: 300px;
+    display: inline block;
+    margin: 0 auto;
+}
+.header{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 60px;
+    color: white;
+    background-color: black;
+    padding: 0 20px;
+    border-radius: 10px 10px 0 0;
+}
+.body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.zero{
+    grid-column: span 2;
+    border-radius: 0 0 0 10px;
+}
+.equally{
+    border-radius: 0 0 10px 0;
+}
+button{
+    border: 1px solid black;
+    height: 60px;
+    font-size: 30px;
+    background-color: gray;
+    color: white;
+}
+button:hover{
+    opacity: 0.7;
+}
+.interactions{
+    background-color: rgb(88, 88, 88);
+}
+.operator{
+    background-color: orange;
+}
