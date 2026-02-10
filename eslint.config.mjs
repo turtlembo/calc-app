@@ -6,13 +6,15 @@ import eslintConfigPrettier from "eslint-config-prettier";
 // import { rules } from "eslint-config-prettier";
 
 export default defineConfig([
+  {ignores:["dist/**", "node_modules/**", "*.config.js", "*.config.mjs"]},
   { files: ["**/*.{js,mjs,cjs}"], plugins: { js, prettier:prettierPlugin }, extends: ["js/recommended", eslintConfigPrettier], languageOptions: { globals: globals.browser }  },
   {
     rules:{
       "no-unused-vars": "warn",
       "no-undef": "warn",
       "no-console": "error",
-      eqeqeq: "error"
+      eqeqeq: "error",
+      "no-var": "error"
     },
   }
 ]);

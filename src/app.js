@@ -7,6 +7,7 @@
     let previousOperand = '';
     let operation = null;
     let resetDisplay = false;
+    let a = 5;
     
     function updateDisplay() {
         display.textContent = currentOperand;
@@ -21,7 +22,7 @@
     
     function inputDigit(digit) {
         if (currentOperand === '0' || resetDisplay) {
-            currentOperand = digit;
+            currentOperand = digit
             resetDisplay = false;
         } else {
             currentOperand += digit;
